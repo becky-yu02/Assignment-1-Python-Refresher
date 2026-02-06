@@ -1,13 +1,15 @@
 def echo(text: str, repetitions: int = 3) -> str:
     """Imitate a real-world echo."""
 
-    echo_list = list()
+    echo_part = text.split()[-1]
     # Add the last repetitions characters, then the last repetitions - 1,
     # ... then period at the end.
-    for i in range(repetitions, 0, -1):    
-        echo_list.append(text[-i:])
+    if len(echo_part) < repetitions:
+        echo_lines = [echo_part[i:] for i in range(len(echo_part))]
+    else:
+        echo_lines = [echo_part[i:] for i in range(repetitions)]
 
-    return "\n".join(echo_list) + "\n" + "."
+    return "\n".join(echo_lines) + "\n" + "."
 
 
 if __name__ == "__main__":
