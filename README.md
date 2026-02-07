@@ -21,5 +21,5 @@ Python files, along with screenshots of code and outputs are included below with
 
 ##  Part 1: Python Programming Basics (echo function)
 
-The Python file `echo.py` imitates a real-world echo using the function echo(), which contains two input parameters: `text`, a string that represents what the user yells at a mountain, and `repetitions`, an integer that represents the number of times the mountain echoes the user's voice, with the default value being 3. `echo()` then returns a string which represents the echoed sound with a fading effect and ending the echo with a period.</br></br> 
-
+The Python file `echo.py` imitates a real-world echo using the function echo(), which contains two input parameters: `text`, a string that represents what the user yells at a mountain, and `repetitions`, an integer that represents the number of times the mountain echoes the user's voice, with the default value being 3. </br>
+`echo()` then returns a string which represents the echoed sound with a fading effect and ending the echo with a period.</br></br> 
