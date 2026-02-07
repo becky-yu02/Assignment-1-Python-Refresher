@@ -5,9 +5,9 @@ def echo(text: str, repetitions: int = 3) -> str:
     # Add the last repetitions characters, then the last repetitions - 1,
     # ... then period at the end.
     if len(echo_part) < repetitions:
-        echo_lines = [echo_part[i:] for i in range(len(echo_part))]
+        echo_lines = [echo_part[-i:] for i in range(len(echo_part), 0, -1)]
     else:
-        echo_lines = [echo_part[i:] for i in range(repetitions)]
+        echo_lines = [echo_part[-i:] for i in range(repetitions, 0, -1)]
 
     return "\n".join(echo_lines) + "\n" + "."
 
